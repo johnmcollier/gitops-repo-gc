@@ -8,10 +8,10 @@ The tool requires that the `GITHUB_TOKEN` environment variable be exported befor
 
 To delete invalid repositories in the GitOps org (up to 500 at a time) run:
 ```
-./has-repo-gc --operation delete-invalid
+./gitops-repo-gc --operation delete-invalid
 ```
 
 To delete repositories by a given keyword run:
 ```
-./has-repo-gc --operation delete-by-keyword --keyword some-keyword
+./gitops-repo-gc --operation delete-by-keyword --keyword some-keyword
 ```
