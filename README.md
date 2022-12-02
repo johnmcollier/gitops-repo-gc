@@ -6,7 +6,7 @@ A simple command-line utility to garbage collect invalid or no longer needed rep
 
 The tool requires that the `GITHUB_TOKEN` environment variable be exported before using it. The token that you use, must have sufficient permissions to delete repositories from the specified org. 
 
-To delete invalid repositories in the GitOps org (up to 500 at a time) run:
+To delete invalid repositories in the GitOps org (up to 1000 at a time) run:
 ```
 ./gitops-repo-gc --operation delete-invalid
 ```

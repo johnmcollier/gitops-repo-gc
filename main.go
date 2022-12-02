@@ -93,9 +93,9 @@ func listInvalidRepos(ctx context.Context, client *github.Client) ([]*github.Rep
 		}
 
 		// ToDo: Cleanup
-		// There's a lot (> 10k) of invalid repos right now. Limit to 300 returned to avoid rate limiting the GitHub token
+		// There's a lot (> 10k) of invalid repos right now. Limit to 1000 returned to avoid rate limiting the GitHub token
 		count++
-		if count == 5 {
+		if count == 10 {
 			break
 		}
 		// ToDo: cleanup
