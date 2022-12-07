@@ -1,0 +1,23 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: gitops-repo-pruner-role
+rules:
+- apiGroups:
+  - appstudio.redhat.com
+  resources:
+  - applications
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - appstudio.redhat.com
+  resources:
+  - applications/status
+  verbs:
+  - get
+  - list
+  - watch

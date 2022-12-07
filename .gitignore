@@ -1,2 +1,8 @@
 gitops-repo-gc
 has-repo-gc
+all-repos.txt
+allapps.yaml
+all-apps.yaml
+delete-orphans.sh
+orphans.sh
+orphaned-repos.txt
